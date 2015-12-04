@@ -22,7 +22,7 @@ $(document).ready(function(){
     colDiv.append(pictureDiv);
     pictureDiv.append(tweetPic);
 
-    return pictureDiv;
+    return colDiv;
   }; //end of function
 
 });
