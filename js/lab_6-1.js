@@ -4,7 +4,7 @@ $(document).ready(function(){
 
 
   for (var i = 0; i < window.tweets.length; i++) {
-    var tweetCol = tweetBuild (window.tweets[i]);
+    var tweetCol = tweetBuild(window.tweets[i]);
     console.log(tweetCol);
     $(".row").append(tweetCol)
   };
@@ -20,7 +20,9 @@ $(document).ready(function(){
     console.log(tweetPic);
     console.log(colDiv);
     colDiv.append(pictureDiv);
-    pictureDiv.append(tweetPic)
+    pictureDiv.append(tweetPic);
+
+    return pictureDiv;
   }; //end of function
 
 });
